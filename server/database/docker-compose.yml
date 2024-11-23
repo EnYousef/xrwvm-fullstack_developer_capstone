@@ -1,4 +1,4 @@
-version: '3.9'
+version: '4.0'
 
 services:
   # Mongodb service
@@ -13,7 +13,7 @@ services:
 
   # Node api service
   api:
-    image: nodeapp
+    image: nodeapp:latest
     ports:
       - 3030:3030
     depends_on: 
